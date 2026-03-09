@@ -1,7 +1,7 @@
 package Polymorphism_in_a_Simple_Payroll_System;
 public class Company {
     public static void main(String[] args){
-        double totalPayroll = 0;
+        double TotalPayroll = 0;
         Employee[] Karyawan = new Employee[4];
 
         Karyawan[0] = new Manager("Alya", 5000000);
@@ -12,10 +12,10 @@ public class Company {
         for(int i = 0;i <=3; i++){
             Karyawan[i].printInfo();
             System.out.println("-------------------------");
-            totalPayroll += Karyawan[i].calculateSalary();
+            TotalPayroll += Karyawan[i].calculateSalary();
         }
 
-        System.out.println("Total Payroll : " + (long)totalPayroll);
+        System.out.println("Total Payroll : " + (long)TotalPayroll);
     }
 }
 
